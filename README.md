@@ -47,3 +47,7 @@
 You can also search for `// TODO` in order to find all relevant places to complete
 
 ![image](https://user-images.githubusercontent.com/35146205/169763492-4edacd86-365c-4bbb-937b-f67603db8518.png)
+
+
+
+Redux presentation - https://docs.google.com/presentation/d/16usajagd7990qf8jCUzmAM9GSwEkuOASkvV5xHBVRfQ/edit#slide=id.g126381b89ed_0_2746
