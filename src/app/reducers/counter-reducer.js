@@ -9,7 +9,10 @@ const counterReducer = (state = initialState, action) => {
     // TODO handle case actionTypes.RESET (should return the initialState)
     case actionTypes.INCREMENT:
       return { value: state.value + 1 };
-
+    case actionTypes.DECREMENT:
+      return { value: state.value - 1 };
+    case actionTypes.RESET:
+      return { ...initialState };
     // TODO handle case actionTypes.DECREMENT:
 
     default:

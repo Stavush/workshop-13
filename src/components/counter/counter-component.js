@@ -1,15 +1,18 @@
 import { useCallback } from "react";
 
-function CounterComponent({ counterValue, isLoggedIn, incrementAction }) {
+function CounterComponent({ counterValue, isLoggedIn, incrementAction, decrementAction, resetAction }) {
   const increment = useCallback(() => {
     // TODO call incrementAction
+    incrementAction();
   }, [incrementAction]);
   const decrement = useCallback(() => {
     // TODO call decrementAction
-  }, []);
+    decrementAction();
+  }, [decrementAction]);
   const reset = useCallback(() => {
     // TODO call resetAction
-  }, []);
+    resetAction();
+  }, [resetAction]);
 
   const disabled = !isLoggedIn;
   return (

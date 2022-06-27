@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { getLoggedInUser, getIsBadPassword, getIsBadUser } from "../../app/selectors/auth-selectors";
-import { logInAction } from "../../app/actions/login-actions";
+import { logInAction, logOutAction } from "../../app/actions/login-actions";
 import LoginComponent from "./login-component";
 
 const mapStateToProps = (state, ownProps) => {
@@ -13,7 +13,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   // TODO bind logOutAction
-  return bindActionCreators({ logInAction }, dispatch);
+  return bindActionCreators({ logInAction, logOutAction }, dispatch);
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(LoginComponent);
