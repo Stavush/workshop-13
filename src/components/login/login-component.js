@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 import "./login-component.css";
 
-function CounterComponent({ loggedInUserName, badUser, badPassword, logInAction }) {
+function LoginComponent({ loggedInUserName, badUser, badPassword, logInAction }) {
   const [user, setUser] = useState("");
   const [pass, setPass] = useState("");
 
@@ -46,4 +46,4 @@ function CounterComponent({ loggedInUserName, badUser, badPassword, logInAction 
   );
 }
 
-export default CounterComponent;
+export default LoginComponent;
